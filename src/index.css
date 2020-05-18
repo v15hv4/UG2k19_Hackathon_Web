@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 code {
@@ -45,6 +46,11 @@ code {
 
 .CLI ul li {
   list-style: none;
+  float: left;
+}
+
+.TerminalWindow {
+  height: 80vh;
 }
 
 .container .jumbotron {
@@ -71,11 +77,16 @@ code {
   width: 5px;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: #555;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
+}
+
+@media (max-width: 575px) {
+  .TerminalWindow {
+    height: 100vh;
+  }
 }

@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-import Taskbar from './Taskbar'
-import CLI from './CLI'
+import Taskbar from './Taskbar';
+import CLI from './CLI';
 
 const TerminalWindow = () => {
     return (
-        <div className='TerminalWindow container mt-5 px-0'>
+        <div className='TerminalWindow container-fluid m-0 p-0'>
+            <div className="pt-5 d-none d-sm-block d-md-block d-lg-block">&nbsp;</div>
             <Taskbar />
             <CLI />
         </div>
     )
 }
 
-export default TerminalWindow
+export default TerminalWindow;
