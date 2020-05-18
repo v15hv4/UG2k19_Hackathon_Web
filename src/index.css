@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 code {
@@ -30,13 +31,13 @@ code {
   background-color: black !important;
   color: #4af626;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
 }
 
 .command {
   background-color: black;
   color: #4af626;
   border: none;
-  width: 100%;
 }
 
 .command:focus {
@@ -46,6 +47,10 @@ code {
 .CLI ul li {
   list-style: none;
   float: left;
+}
+
+.TerminalWindow {
+  height: 80vh;
 }
 
 .container .jumbotron {
@@ -72,11 +77,16 @@ code {
   width: 5px;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: #555;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
+}
+
+@media (max-width: 575px) {
+  .TerminalWindow {
+    height: 100vh;
+  }
 }

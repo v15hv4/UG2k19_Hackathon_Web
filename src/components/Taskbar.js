@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Taskbar = () => {
     return (
@@ -15,4 +15,4 @@ const Taskbar = () => {
     )
 }
 
-export default Taskbar
+export default Taskbar;

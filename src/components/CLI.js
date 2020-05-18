@@ -1,19 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-import Response from '../responses/Response'
+import Response from '../responses/Response';
 
 class CLI extends React.Component {
     state = {
         page: "home",
         command: "",
         response: <span></span>
-    }
+    };
+
     componentDidMount() {
+        document.querySelector('form .command').addEventListener('blur', () => {
+            document.querySelector('form .command').focus();
+        })
         document.querySelector('.command').focus();
     }
+
     handleChange = (e) => {
         this.setState({ command: e.target.value });
     }
+
     handleSubmit = (e) => {
         e.preventDefault();
         this.setState({ response: Response(this.state.command) });
@@ -22,22 +28,22 @@ class CLI extends React.Component {
     shiftFocus = e => document.querySelector('.command').focus();
     render() {
         return (
-            <div className='CLI jumbotron mx-0 pt-0 rounded-bottom shadow overflow-auto' onClick={this.shiftFocus} style={{ height: "80vh" }}>
-                <div className='row justify-content-center'>
+            <div className='CLI container rounded-bottom shadow overflow-auto h-100' onClick={this.shiftFocus}>
+                <div className='row pt-3 justify-content-center'>
                     <img src='h19_term_header.png' alt='Hackathon2k19' className="img-fluid"></img>
                 </div>
-                <div className='row pt-3'>
+                <div className='row pl-2 pt-3'>
                     <form onSubmit={this.handleSubmit} className='col-12 pl-0'>
-                        <span className='col-12 col-md-4 px-0'>faccha@hackathon2k19: {this.state.page} $</span>
-                        <input type='text' className='command px-1 col-12 col-md-8' autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" onChange={this.handleChange} value={this.state.command} />
+                        <span className='col-12 col-md-4 px-0 mr-2'>faccha@hackathon2k19: {this.state.page} $</span>
+                        <input type='text' className='command autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false"' autoFocus onChange={this.handleChange} value={this.state.command} />
                     </form>
                 </div>
-                <div className='row'>
+                <div className='row pl-2'>
                     {this.state.response}
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default CLI
+export default CLI;
