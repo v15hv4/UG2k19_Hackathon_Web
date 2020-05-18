@@ -10,10 +10,10 @@ const Response = (command) => {
         return sudo();
     else if (command.match(/^ls\D*/))
         return ls();
-    
+
     else if (command.match(/^cat\D*/)) {
         const fileName = command.split(' ')[1];
-        return cat(filename);
+        return cat(fileName);
     }
     else if (command === "clear")
         return clear();

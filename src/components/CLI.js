@@ -38,7 +38,7 @@ class CLI extends React.Component {
                         <input type='text' className='command autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false"' autoFocus onChange={this.handleChange} value={this.state.command} />
                     </form>
                 </div>
-                <div className='row pl-2'>
+                <div className='row pl-2 text-center'>
                     {this.state.response}
                 </div>
             </div>
