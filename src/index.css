@@ -46,7 +46,7 @@ code {
   outline: none;
 }
 
-.ls-list {
+.ls-list li {
   list-style: none;
   float: left;
 }

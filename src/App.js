@@ -8,7 +8,7 @@ import 'popper.js'
 
 import TerminalWindow from './components/TerminalWindow'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Helmet>
