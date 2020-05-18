@@ -18,13 +18,13 @@ class CLI extends React.Component {
     }
     render() {
         return (
-            <div className='CLI jumbotron rounded-0 mx-0 pt-1' style={{ height: "80vh" }}>
+            <div className='CLI jumbotron mx-0 pt-0 rounded-bottom shadow' style={{ height: "80vh" }}>
                 <div className='row justify-content-center'>
                     <p className='lead text-center'>Welcome. To get more information, inspect the contents of this directory. </p>
                 </div>
-                <div className='row'>
-                    faccha@hackathon2k19: {this.state.page} $
+                <div className='row pt-3'>
                 <form onSubmit={this.handleSubmit}>
+                        faccha@hackathon2k19: {this.state.page} $
                         <input type='text' className='command ml-2' autoFocus onChange={this.handleChange} value={this.state.command} />
                     </form>
                 </div>

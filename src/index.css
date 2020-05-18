@@ -29,8 +29,7 @@ code {
 .CLI {
   background-color: black !important;
   color: #4af626;
-  font-family: 'Noto Sans JP',
-    sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .command {
@@ -46,4 +45,24 @@ code {
 
 .CLI ul {
   list-style: none;
+}
+
+.container .jumbotron {
+  border-radius: 0;
+}
+
+.tb-bg {
+  background-color: #222222;
+}
+
+.tb-close {
+  background-color: #EA4F55;
+}
+
+.tb-min {
+  background-color: #FFB900;
+}
+
+.tb-max {
+  background-color: #12D146;
 }
