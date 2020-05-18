@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Taskbar {
+  border-radius: 50px;
+}
+
+.action-buttons button {
+  width: 15px !important;
+  height: 15px !important;
+  border: none;
+}
+
+.action-buttons button:hover {
+  filter: brightness(1.5);
+}
+
+.CLI {
+  background-color: black !important;
+  color: #4af626;
+  font-family: 'Noto Sans JP',
+    sans-serif;
+}
+
+.command {
+  background-color: black;
+  color: #4af626;
+  border: none;
+
+}
+
+.command:focus {
+  outline: none;
+}

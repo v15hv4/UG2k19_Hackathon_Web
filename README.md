@@ -1,14 +1,10 @@
-# Website_Design
-Here the web designers collaborate
+# Website for HackathonUG2k19
 
-<h1>Members: </h1>
+## To get started:
+Make sure you have `node` and `npm` installed. Then clone the repo, `cd` into the directory and run:
+```
+npm install
+npm start
+```
 
-<ul>
-  <li>Kshitijaa jaglaan</li>
-  <li>Vishwa</li>
-  <li>Dhruv Kapur</li>
-  <li>Ritvik kalra</li>
-  <li>Mehul Mathur</li>
-  <li>Mayank Goel</li>
-  </ul>
-
+This should spin up the local development server.
