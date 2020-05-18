@@ -41,7 +41,6 @@ class CLI extends React.Component {
                 <div className='row pl-2'>
                     {this.state.response}
                 </div>
-                <div className="row d-block d-sm-none d-md-none d-lg-none"> bruh </div>
             </div>
         );
     }

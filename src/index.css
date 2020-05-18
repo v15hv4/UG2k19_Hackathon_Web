@@ -48,6 +48,10 @@ code {
   float: left;
 }
 
+.TerminalWindow {
+  height: 80vh;
+}
+
 .container .jumbotron {
   border-radius: 0;
 }
