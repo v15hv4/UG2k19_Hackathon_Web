@@ -9,5 +9,6 @@ Here the web designers collaborate
   <li>Dhruv Kapur</li>
   <li>Ritvik kalra</li>
   <li>Mehul Mathur</li>
+  <li>Mayank Goel</li>
   </ul>
 
