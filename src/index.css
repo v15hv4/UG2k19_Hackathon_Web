@@ -43,7 +43,7 @@ code {
   outline: none;
 }
 
-.CLI ul {
+.CLI ul li {
   list-style: none;
 }
 
@@ -67,9 +67,15 @@ code {
   background-color: #12D146;
 }
 
-.h19-img {
-  height: 120px;
-  background-image: url(./img/h19_term_header.png);
-  background-repeat: no-repeat;
-  background-position: center;
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }

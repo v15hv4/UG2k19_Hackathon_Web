@@ -15,7 +15,7 @@ function App() {
         <style>{"body{ background-color: #282c34;}"}</style>
       </Helmet>
       <TerminalWindow />
-    </div>
+    </div >
   );
 }
 
