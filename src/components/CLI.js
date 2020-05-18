@@ -1,29 +1,36 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const CLI = () => {
-    const [page, setPage] = useState("home");
-    const [command, setCommand] = useState("")
-    const handleChange = (e) => {
-        setCommand(e.target.value);
+class CLI extends React.Component {
+    state = {
+        page: "home",
+        command: "",
+        response: null
     }
-    const handleSubmit = (e) => {
+    handleChange = (e) => {
+        this.setState({ command: e.target.value });
+    }
+    handleSubmit = (e) => {
         e.preventDefault();
-        setCommand("");     
-        console.log(command);
+        console.log(this.state.command);
+        this.setState({ command: "" })
     }
-    return (
-        <div className='CLI jumbotron rounded-0 mx-0 pt-1' style={{ height: "80vh" }}>
-            {/* <div className='row justify-content-center'>
-                <img src="TitleASCIIArt.png" class="img-fluid" alt="Responsive image" />
-            </div> */}
-            <div className='row'>
-                faccha@hackathon2k19: {page} $
-                <form onSubmit={handleSubmit}>
-                    <input type='text' className='command ml-2' autoFocus onChange={handleChange} value={command} />
-                </form>
+    render() {
+        return (
+            <div className='CLI jumbotron rounded-0 mx-0 pt-1' style={{ height: "80vh" }}>
+                <div className='row justify-content-center'>
+                    <p className='lead text-center'>Welcome. To get more information, inspect the contents of this directory. </p>
+                </div>
+                <div className='row'>
+                    faccha@hackathon2k19: {this.state.page} $
+                <form onSubmit={this.handleSubmit}>
+                        <input type='text' className='command ml-2' autoFocus onChange={this.handleChange} value={this.state.command} />
+                    </form>
+                </div>
+                <div className='row'>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default CLI
