@@ -31,6 +31,7 @@ code {
   background-color: black !important;
   color: #4af626;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
 }
 
 .command {
