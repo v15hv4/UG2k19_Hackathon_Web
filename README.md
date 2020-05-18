@@ -21,7 +21,7 @@ Inside `ok.js`, write a fuction that returns the JSX you want rendered as a resp
 import React from 'react';
 
 const ok = () => {
-    return (<span>BOOMER</span]>)
+    return (<span>BOOMER</span>)
 }
 
 export default ok;
