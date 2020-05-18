@@ -44,9 +44,18 @@ code {
   outline: none;
 }
 
-.CLI ul li {
+.ls-list {
   list-style: none;
   float: left;
+}
+
+.CLI .response a {
+  color: white;
+  text-decoration: underline;
+}
+
+.CLI .response a:hover {
+  color: #0080ff;
 }
 
 .TerminalWindow {
