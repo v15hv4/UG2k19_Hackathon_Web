@@ -36,7 +36,7 @@ code {
   background-color: black;
   color: #4af626;
   border: none;
-
+  width: 100%;
 }
 
 .command:focus {
@@ -45,6 +45,7 @@ code {
 
 .CLI ul li {
   list-style: none;
+  float: left;
 }
 
 .container .jumbotron {
