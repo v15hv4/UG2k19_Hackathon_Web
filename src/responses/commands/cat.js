@@ -5,7 +5,6 @@ const cat = name => {
 		return (
 			<div className='Guidelines'>
 				<h1>Guidelines</h1>
-				<p>
 					<ul>
 						<li>Each team must contain 3 - 5 members. Kindly adhere to the limit.</li>
 						<li>Upon registration, each team will be assigned to their specific mentor.</li>
@@ -29,7 +28,6 @@ const cat = name => {
 						<li>Add OSDG discord link here</li>
 						<li>Add hackathon discord server link here</li>
 					</ul>
-				</p>
 			</div>
 
 		)

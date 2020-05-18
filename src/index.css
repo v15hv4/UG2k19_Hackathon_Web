@@ -38,6 +38,8 @@ code {
   background-color: black;
   color: #4af626;
   border: none;
+  width: calc(100% - 300px);
+  min-width: 300px;
 }
 
 .command:focus {
