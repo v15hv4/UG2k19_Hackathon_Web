@@ -19,7 +19,8 @@ class CLI extends React.Component {
     render() {
         return (
             <div className='CLI jumbotron mx-0 pt-0 rounded-bottom shadow' style={{ height: "80vh" }}>
-                <div className='row justify-content-center'>
+                <div className='row justify-content-center pt-3 h19-img'/>
+                <div className='row justify-content-center pt-3'>
                     <p className='lead text-center'>Welcome. To get more information, inspect the contents of this directory. </p>
                 </div>
                 <div className='row pt-3'>
