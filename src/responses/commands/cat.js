@@ -87,9 +87,6 @@ const cat = name => {
 			<span className='text-danger'>cat: {name}: No such file<br />
 				or directory </span>
 		)
-
-
-
 }
 
 export default cat;
