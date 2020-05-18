@@ -43,3 +43,7 @@ code {
 .command:focus {
   outline: none;
 }
+
+.CLI ul {
+  list-style: none;
+}

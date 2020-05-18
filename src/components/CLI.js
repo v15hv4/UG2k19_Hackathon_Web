@@ -1,17 +1,19 @@
 import React from 'react'
 
+import Response from '../responses/Response'
+
 class CLI extends React.Component {
     state = {
         page: "home",
         command: "",
-        response: null
+        response: <span></span>
     }
     handleChange = (e) => {
         this.setState({ command: e.target.value });
     }
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state.command);
+        this.setState({ response: Response(this.state.command) });
         this.setState({ command: "" })
     }
     render() {
@@ -27,6 +29,7 @@ class CLI extends React.Component {
                     </form>
                 </div>
                 <div className='row'>
+                    {this.state.response}
                 </div>
             </div>
         )
