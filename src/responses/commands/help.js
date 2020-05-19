@@ -5,7 +5,7 @@ const help = () => {
 	return (
 		<div className='Help pr-2'>
 			<h1 className='my-1 text-primary'>Hasn't being at IIIT taught you anything?</h1>
-			<h1 className='text-warning'>(－^ლ)</h1>
+			<h1 className='text-warning'>(－_ლ)</h1>
 			<ol>
 				<li>help →  Incase you need help </li>
 				<li>ls →  See a list of all file names in this directory</li>
