@@ -38,7 +38,7 @@ code {
   background-color: black;
   color: #4af626;
   border: none;
-  width: calc(100% - 300px);
+  width: calc(100% - 400px);
   min-width: 300px;
 }
 
@@ -86,6 +86,27 @@ code {
 
 .tb-max {
   background-color: #12D146;
+}
+
+.btn-hacc {
+  background-color: #000 !important;
+  border-width: 2px !important;
+  border-color: #4af626 !important;
+  color: #4af626 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-weight: 700 !important;
+  min-width: 250px;
+}
+
+.btn-redpill {
+  border-color: red !important;
+  color: red !important;
+}
+
+
+.btn-bluepill {
+  border-color: blue !important;
+  color: blue !important;
 }
 
 .TerminalWindow {

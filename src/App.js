@@ -14,7 +14,7 @@ const App = () => {
       <Helmet>
         <style>{"body{ background-color: #282c34;}"}</style>
       </Helmet>
-      <TerminalWindow />
+      <TerminalWindow/>
     </div >
   );
 }
