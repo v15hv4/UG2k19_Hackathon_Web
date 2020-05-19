@@ -7,7 +7,7 @@ class CLI extends React.Component {
         page: "home",
         command: "",
         response: <span></span>,
-        placeholder: "Try 'help' if you have no clue what's going on..."
+        placeholder: "Try 'help' if you need help..."
     };
 
     componentDidMount() {
@@ -31,7 +31,7 @@ class CLI extends React.Component {
         return (
             <div className='CLI container rounded-bottom shadow overflow-auto h-100' onClick={this.shiftFocus}>
                 <div className='row pt-3 justify-content-center'>
-                    <img src='h19_term_header.png' alt='HackathonUG2k19' className="img-fluid"></img>
+                    <img src='h19_term_header.png' alt='HackathonUG2k19' className="img-fluid col-12 col-md-8"></img>
                 </div>
                 <div className='row px-3 pt-3'>
                     <form onSubmit={this.handleSubmit} className='col-12 pl-0'>
