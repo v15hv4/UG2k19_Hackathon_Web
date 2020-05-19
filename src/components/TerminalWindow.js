@@ -20,7 +20,7 @@ class TerminalWindow extends Component {
     render() {
         return (
             <React.Fragment>
-            <div class="mainBG" style={{ height: "100vh", backgroundColor: this.state.bg_color }}>
+            <div className="mainBG" style={{ height: "100vh", backgroundColor: this.state.bg_color }}>
             <div className='TerminalWindow container-fluid m-0 p-0'>
                 <div className="pt-5 d-none d-sm-block d-md-block d-lg-block">&nbsp;</div>
                 <Taskbar visibility={(this.state.intro_hidden) ? "" : "invisible"}/>
