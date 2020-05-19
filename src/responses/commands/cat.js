@@ -16,11 +16,11 @@ const cat = name => {
 					</li>
 					<li>You are required to issue your first Pull Request by 1155 hours on 23 May. This is done so as to keep a check on the teams.</li>
 					<li>Copy-Paste of code is allowed, if code is redistributable. On doing so, you must cite them.</li>
-					<li>The coding round would end at 2000 hours on 24 May. Before This, make sure to merge your fork with the main repository in the organization <a href="https://github.com/HackathonUG2k19">github.com/HackathonUG2k19</a>. The last PR before 8 pm on 24 May will be considered.</li>
+					<li>The coding round would end at 2000 hours on 24 May. Before This, make sure to merge your fork with the main repository in the organization <a href="https://github.com/HackathonUG2k19" target="_blank" rel="noopener noreferrer">github.com/HackathonUG2k19</a>. The last PR before 8 pm on 24 May will be considered.</li>
 					<li>The team is reqired to give a maximum of a 10 minute presentation on their respective projects, which shall be judged. This will be on a pl	atform like Zoom or  Microsoft teams.</li>
 					<li>Apart From this feel free to join :
-						<a className='d-block'>OSDG Discord Link - To Be Announced</a>
-						<a className='d-block' href='https://discord.com/invite/gMB2cJR'>Hackathon server discord link</a>
+						<a className='d-block' href='/' onClick={(e) => e.preventDefault()}>OSDG Discord Link - To Be Announced</a>
+						<a className='d-block' href='https://discord.com/invite/gMB2cJR' target="_blank" rel="noopener noreferrer">Hackathon server discord link</a>
 					</li>
 				</ol>
 			</div >

@@ -9,7 +9,7 @@ const Taskbar = () => {
                     <button className='rounded-circle mx-1 tb-min d-none d-md-inline' /> &thinsp;
                     <button className='rounded-circle mr-1 tb-max d-none d-md-inline' />
                 </span>
-                <h6 className='text-white m-auto tb-header pr-3'> Hackathon2k19 </h6>
+                <h6 className='text-white m-auto tb-header pr-3'> HackathonUG2k19 </h6>
             </div>
         </div>
     )
