@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ls from './commands/ls';
 import sudo from './commands/sudo';
 import clear from './commands/clear';
