@@ -10,13 +10,6 @@ class CLI extends React.Component {
         placeholder: "Try 'help' if you need help..."
     };
 
-    componentDidMount() {
-        document.querySelector('form .command').addEventListener('blur', () => {
-            document.querySelector('form .command').focus();
-        })
-        document.querySelector('.command').focus();
-    }
-
     handleChange = (e) => {
         this.setState({ command: e.target.value });
     }
