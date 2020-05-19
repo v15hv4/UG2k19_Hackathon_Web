@@ -97,6 +97,7 @@ const cat = name => {
 					<li>Aashna Jena</li>
 					<li>Saujas Vadhguru</li>
 					<li>Yoogottam Khandelwal</li>
+					<li>Abhinav Gupta</li>
 				</ul>
 				<p>Thanks a lot guys! You're the best!</p>
 			</div>
