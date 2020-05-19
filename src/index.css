@@ -127,6 +127,9 @@ code {
 
 @media (max-width: 575px) {
   .TerminalWindow {
-    height: 100vh;
+    height: 90vh;
+  }
+  .mainBG {
+    background-color: #000 !important;
   }
 }
