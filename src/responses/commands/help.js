@@ -11,6 +11,7 @@ const help = () => {
 				<li>ls →  See a list of all file names in this directory</li>
 				<li>cat [filename] →  Print contents of the file to the terminal</li>
 				<li>clear →  Clear the screen </li>
+				<li>exit →  Exit the terminal </li>
 			</ol>
 			<p>******************</p>
 			<p className='text-danger'>Feel free to try out other commands you are familiar with :)</p>
