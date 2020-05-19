@@ -46,9 +46,8 @@ code {
   outline: none;
 }
 
-.ls-list li {
-  list-style: none;
-  float: left;
+.container .jumbotron {
+  border-radius: 0;
 }
 
 .CLI .response a {
@@ -60,12 +59,17 @@ code {
   color: #0080ff;
 }
 
-.TerminalWindow {
-  height: 80vh;
+.custom-message {
+  color: #1e1e1e;
 }
 
-.container .jumbotron {
-  border-radius: 0;
+.ls-list li {
+  list-style: none;
+  float: left;
+}
+
+.sudo-list li {
+  list-style: none;
 }
 
 .tb-bg {
@@ -82,6 +86,10 @@ code {
 
 .tb-max {
   background-color: #12D146;
+}
+
+.TerminalWindow {
+  height: 80vh;
 }
 
 ::-webkit-scrollbar {

@@ -81,6 +81,26 @@ const cat = name => {
 				</ul>
 			</div>
 		)
+	else if (name === 'mentors.txt')
+		return (
+			<div className='Mentors'>
+				<h1 className='my-1'>Mentors</h1>
+				<p>
+					Here are the awesome seniors who volunteered to be mentors:
+				</p>
+				<ul>
+					<li>Manan Goel</li>
+					<li>Istasis Mishra</li>
+					<li>Devansh Manu</li>
+					<li>Mallika Subramaniam</li>
+					<li>Shraddha Sehgal</li>
+					<li>Aashna Jena</li>
+					<li>Saujas Vadhguru</li>
+					<li>Yoogottam Khandelwal</li>
+				</ul>
+				<p>Thanks a lot guys! You're the best!</p>
+			</div>
+		)
 
 	else
 		return (

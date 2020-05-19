@@ -6,6 +6,7 @@ import clear from './commands/clear';
 import cat from './commands/cat';
 import cd from './commands/cd';
 import help from './commands/help'
+import fallthrough from './commands/fallthrough';
 
 const Response = (command) => {
     if (command.match(/^sudo\D*/))
@@ -26,7 +27,7 @@ const Response = (command) => {
     else if (command === "help")
         return help();
     else
-        return (<span className='text-danger'>Command Not Found: {command.split(' ')[0]}</span>)
+        return fallthrough(command.split(' ')[0]);
 }
 
 export default Response;

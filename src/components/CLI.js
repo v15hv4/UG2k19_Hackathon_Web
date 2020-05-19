@@ -6,7 +6,8 @@ class CLI extends React.Component {
     state = {
         page: "home",
         command: "",
-        response: <span></span>
+        response: <span></span>,
+        placeholder: "Try 'help' if you have no clue what's going on..."
     };
 
     componentDidMount() {
@@ -23,7 +24,7 @@ class CLI extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.setState({ response: Response(this.state.command) });
-        this.setState({ command: "" })
+        this.setState({ command: "", placeholder: "" })
     }
     shiftFocus = e => document.querySelector('.command').focus();
     render() {
@@ -35,7 +36,7 @@ class CLI extends React.Component {
                 <div className='row px-3 pt-3'>
                     <form onSubmit={this.handleSubmit} className='col-12 pl-0'>
                         <span className='col-12 col-md-4 px-0 mr-2'>faccha@hackathon2k19: {this.state.page} $</span>
-                        <input type='text' className='command' autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" autoFocus onChange={this.handleChange} value={this.state.command} />
+                        <input type='text' className='command' autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck="false" autoFocus onChange={this.handleChange} value={this.state.command} placeholder={this.state.placeholder} />
                     </form>
                 </div>
                 <div className=' response row px-3 pb-5 pb-md-1'>
