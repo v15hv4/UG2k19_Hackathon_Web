@@ -49,7 +49,7 @@ const cat = name => {
 			<div className='Teams pr-2'>
 				<h1 className='my-1'>Teams</h1>
 				<p>
-					Form teams of 3-5 members, and fill in the form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjwiimXOQOpdp2gkO_lOzjHvOsB2cFs-Q_2Lw4XiBPLVnsIQ/viewform"> Hackathon Registration</a><br />
+					Form teams of 3-5 members, and fill in the form: <a href="https://docs.google.com/forms/d/e/1FAIpQLSfjwiimXOQOpdp2gkO_lOzjHvOsB2cFs-Q_2Lw4XiBPLVnsIQ/viewform" target="_blank" rel="noopener noreferrer"> Hackathon Registration</a><br />
 					Try to prioritize similar technologies, and work together to make something cool.
 				</p>
 			</div>
