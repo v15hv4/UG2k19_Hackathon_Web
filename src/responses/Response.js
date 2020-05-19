@@ -5,6 +5,7 @@ import sudo from './commands/sudo';
 import clear from './commands/clear';
 import cat from './commands/cat';
 import cd from './commands/cd';
+import help from './commands/help'
 
 const Response = (command) => {
     if (command.match(/^sudo\D*/))
@@ -22,6 +23,8 @@ const Response = (command) => {
         const dirName = command.split(' ')[1];
         return cd(dirName);
     }
+    else if (command === "help")
+        return help();
     else
         return (<span className='text-danger'>Command Not Found: {command.split(' ')[0]}</span>)
 }
