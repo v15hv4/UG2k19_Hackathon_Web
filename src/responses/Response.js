@@ -26,10 +26,8 @@ const Response = (command) => {
     }
     else if (command === "help")
         return help();
-    else if (command === "exit")
-        return exit();
-    else if (command === "rickroll") {
-        window.open('https://www.youtube.com/watch?v=oHg5SJYRHA0', '_newtab');
+    else if (command === "exit") {
+        window.location.href = 'https://www.youtube.com/watch?v=oHg5SJYRHA0';
         return rickroll();
     }
     else
